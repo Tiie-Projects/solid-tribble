@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;900&display=swap');
+/*------------------- CSS --------------------*/
+
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-attachment: fixed;
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem; /* 16px Webbrowser */
+}
+
+a{
+	color: #000;
+}
+
+a:hover{
+	color: #000;
+}
+
+/*--------------- Side-Info -----------------*/
+#side-info{
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 40%;
+	width: 70px;
+	height: 400px;
+	z-index: 100;
+}
+
+#side-info .content1{
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+
+#side-info .content2{
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+
+#side-info .content3{
+	width: 70px;
+	height: 70px;
+	background: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+
+#infotab{
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	color: rgba(0,0,0,0.7);
+	background: #f2efe8;
+	z-index: 99;
+	font-size: 0.8rem;
+}
+
+#infotab a{
+	color: rgba(0,0,0,0.7);
+	transition: 100ms linear color;
+}
+
+#infotab a:hover{
+	color: rgba(0,0,0,0.8);
+}
+
+#infotab .infotabcontent{
+	max-width: 1200px;
+}
+
+#infotab .infotabcontent p{
+	margin: 0 5px;
+	padding: 0;
+}
+
+/*----------------- Header ------------------*/
+
+header{
+	width: 100%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+	width: 100% !important;
+}
+
+.mySlides img {
+	width: 100%!important;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  color: #fff!important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 20px;
+}
+
+.prev{
+	left: 20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* The dots/bullets/indicators */
+#dotcontent{
+	bottom: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -33px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	border: 1px solid #fff;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+	opacity: 1!important;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.spacer_header{
+	height: 200px;
+	position: relative;
+	width: 100%;
+	background: #fff;
+}
+
+.spacer_header::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	top: 0;
+	background: #000034;
+}
+/*--------------- Navigation ----------------*/
+nav {
+	max-width: 1200px;
+	height: 100%;
+	background: #ffffff;
+	margin: 0 auto;
+	color: #000;
+}
+
+#nav_id{
+	background: #ffffff;
+	width: 100%;
+	height: 150px;
+	list-style: none;
+	text-decoration: none;
+	z-index: 999;
+	transition: 300ms linear height;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px !important;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.1);
+}
+
+.sticky .nav_g #logo {
+	height: 120px !important;
+	width: 50% !important;
+}
+
+.push {
+	margin-top: 100px;
+}
+
+.nav_g #logo{
+	width: 80%;
+	height: 150px;
+	position: relative;
+	padding: 30px 0;
+	transition: 300ms linear width, 300ms linear height;
+}
+
+.nav_s {
+	color: #000;
+}
+
+.nav_s li {
+	display: inline;
+	position: relative;
+	margin-right: 20px;
+}
+
+.nav_s a {
+	color: #000;
+}
+
+/*---------------- Content -----------------*/
+
+#content {
+	height: 210px;
+	width: 100%;
+	display: block;
+	background: #ffffff;
+	-webkit-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.1);
+}
+
+#content h4 {
+	margin-top: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+#content #container1 {
+	height: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#content2 .container1btn {
+	text-align: center;
+	background: #ee2c24;
+	color: #ffffff;
+	padding: 15px 45px;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+	font-weight: 900;
+	transition: 300ms linear background, 300ms linear transform;
+	border-radius: 5px;
+}
+
+#content2 .container1btn:hover{
+	background: #ff0700;
+	transform: scale(1.05);
+}
+
+#content2 {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 500px;
+	width: 100%;
+	display: block;
+}
+
+#content2 .headline {
+	color: #ffffff;
+	display: block;
+	position: relative;
+	font-size: 2rem;
+	margin-top: 40px;
+	text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+}
+
+#content2 .underline {
+	color: #ffffff;
+	display: block;
+	position: relative;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+	text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+}
+
+#content2 .container2 {
+	height: 200px;
+	width: 100%;
+	position: relative;
+}
+
+/*------------------------------------------*/
+
+/*---------------- Footer ------------------*/
+footer {
+	height: 150px;
+	width: 100%;
+	position: relative;
+	background: #ffffff;
+	-webkit-box-shadow: 0px -2px 5px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px -2px 5px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px -2px 5px 1px rgba(0,0,0,0.1);
+}
+
+.footer_container{
+	max-width: 1200px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.footer_container .footer_logo #logo{
+	width: 100%;
+	height: 100px;
+}
+
+.footer_nav {
+	color: #000;
+}
+
+.footer_nav li {
+	display: inline;
+	position: relative;
+	margin-right: 20px;
+}
+
+.footer_nav a {
+	color: #000;
+}
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

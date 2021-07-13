@@ -1,0 +1,21 @@
+main {
+	color: #000;
+}
+
+main h4.page404{
+	display: block;
+	font-size: 5rem;
+	margin-top: 20px;
+}
+
+main p{
+	font-size: 1.25rem;
+}
+
+main #container {
+	background: #fff;
+	height: 200px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 5px;
+}
